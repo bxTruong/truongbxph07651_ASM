@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tvIDTK"
+        android:text="1."
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tvNameTK"
+        android:text="Name"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvPriceThuKhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+       <TextView
+           android:textSize="16sp"
+           android:layout_marginRight="16dp"
+           android:id="@+id/tvThongKeTien"
+           android:text="Giá Tiền"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

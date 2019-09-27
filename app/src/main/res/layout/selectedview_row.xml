@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#E2E2E2"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/h"
+        android:drawablePadding="12dp"
+        android:padding="8dp"
+        android:id="@+id/tvSpinner1"
+        android:text="a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

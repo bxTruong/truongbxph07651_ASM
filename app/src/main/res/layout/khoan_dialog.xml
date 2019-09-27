@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true">
+
+                <EditText
+                    android:id="@+id/edtNameKhoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/d"
+                    android:drawablePadding="23dp"
+                    android:hint="Mời Nhập Tên" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                >
+            <EditText
+                android:id="@+id/edtPriceKhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/f"
+                android:drawablePadding="23dp"
+                android:hint="Mời Nhập Số Tiền" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/edtDateKhoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/btnDateKhoan"
+                    android:drawableLeft="@drawable/b"
+                    android:drawablePadding="16dp"
+                    android:enabled="false"
+                    android:hint="Mời Chọn Ngày Tháng" />
+
+                <ImageButton
+                    android:id="@+id/btnDateKhoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:background="#00111111"
+                    android:src="@drawable/c" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginTop="16dp"
+                android:id="@+id/spKhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatSpinner>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/btnHuyKhoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/btnThemKhoan"
+                    android:text="Hủy" />
+
+                <Button
+                    android:id="@+id/btnThemKhoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Thêm" />
+            </RelativeLayout>
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

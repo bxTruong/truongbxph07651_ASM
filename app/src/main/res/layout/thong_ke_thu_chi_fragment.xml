@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/certificate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/tvTongThu"
+            android:text="Tổng Thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Tổng Chi"
+            android:textSize="20sp"
+            android:id="@+id/tvTongChi"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:text="="
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/tvThongKe"
+            android:layout_marginLeft="8dp"
+            android:text="Tổng Tiền"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imgThongBao"
+        android:src="@drawable/warning"
+        android:layout_width="32dp"
+        android:layout_height="32dp" />
+    <TextView
+        android:textSize="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Bạn Chưa Nhập Đủ Giá Trị Của Thu Và Chi"
+        android:id="@+id/tvThongBao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

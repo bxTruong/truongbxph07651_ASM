@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/nen22"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+<ImageView
+    android:src="@drawable/tuitienden"
+    android:layout_width="40dp"
+    android:layout_height="40dp" />
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tvIDThu"
+        android:text="1."
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tvNameThu"
+        android:text="Name"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:background="#00111111"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:id="@+id/btnXoaThu"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:background="#00111111"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_edit_black_24dp"
+        android:id="@+id/btnSuaThu"
+        android:layout_toLeftOf="@+id/btnXoaThu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
